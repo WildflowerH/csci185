@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Your code here */
+
+    header {
+        background-color: rgb(red, green, rgb(34, 34, 158));
+        padding: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+    }
+
+
+section {
+    border-width: 1px;
+    border-style: solid;
+    display:inline-block;
+    margin: 20px;
+    
+}
+
+
+    
+    
