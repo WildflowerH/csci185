@@ -1,0 +1,43 @@
+body {
+    background-color: #F0F4EF;
+}
+
+header {
+    background-color: #b4cded;
+    padding: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+footer{
+   background-color: #344966;
+   color: white; 
+}
