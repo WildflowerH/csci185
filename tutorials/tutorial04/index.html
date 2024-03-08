@@ -12,6 +12,8 @@
     <!-- Header -->
     <header>
         <h1>My Bakery</h1>
+        
+    
     </header>
 
 
@@ -88,6 +90,23 @@
         <!-- Semantic section to hold "Contact info" -->
         <section id="contact">
             <!-- Form tags go here -->
+            <form action="https://formsubmit.co/heatherfbeauty@gmail.com" method="post">
+                <h2>Contact Us</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" spellcheck="true" rows="10"></textarea>
+
+                <button id="submit" type="submit">Send</button>
+
+                <input type="hidden" id="redirect" name="_next" value="">
+
+            </form>
 
 
 
@@ -99,6 +118,7 @@
         <!-- Semantic footer section -->
         <footer>
             <p>Copyright notice goes here...</p>
+            padding: 60px 15vw
         </footer>
 
     </main>
