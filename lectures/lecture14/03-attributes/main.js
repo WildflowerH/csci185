@@ -21,7 +21,7 @@ function showBird() {
 
 function showFish() {
     const img = document.querySelector("#current-image");
-    const caption =document.querySelector("caption");
+    const caption =document.querySelector("#caption");
     img.src ="images/fish.jpg";
     caption.innerHTML = "Fish Noggin"
 }
