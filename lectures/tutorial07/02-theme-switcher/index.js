@@ -1,9 +1,9 @@
+const bodyEl = document.querySelector("body");
 
-    const bodyEl =document.querySelector("body");
-  
 
-function changeTheme(myClass) {
+function changeTheme(myClass){
     bodyEl.className = myClass;
+
 }
 /*
     Hints: 

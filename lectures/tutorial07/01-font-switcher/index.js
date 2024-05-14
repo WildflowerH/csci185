@@ -4,6 +4,7 @@ function makeBigger() {
    //document.querySelector("header")
    //HOw do you change it's font size? (.style.fontSize
    document.querySelector("header").style.fontSize = "40px";
+   
    const contentEl =document.querySelector(".content");
    contentEl.style.fontSize = "30px";
 };
