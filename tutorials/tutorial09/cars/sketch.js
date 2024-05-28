@@ -3,11 +3,19 @@ const canvasHeight = window.innerHeight;
 
 // feel free to change these values as you like!
 const c1 = {
-    x: 100,
-    y: 100,
+    x: 0,
+    y: 300,
     width: 200,
-    speed: 0.2,
-    color: 'hotpink'
+    speed: 2,
+    color: 'black'
+};
+
+const c2 = {
+    x: 1000,
+    y: 300,
+    width: 150,
+    speed: -2,
+    color: 'hotpink',
 };
 
 
@@ -24,9 +32,11 @@ function draw() {
 
     // move the car:
     c1.x += c1.speed;
+    c2.x +=,c2.speed;
 
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
+    drawCar(c2.x, c2.y, c2.width, c1.color);
     
     // draw the grid (optional -- feel free to remove this line):
     drawGrid(canvasWidth, canvasHeight);
