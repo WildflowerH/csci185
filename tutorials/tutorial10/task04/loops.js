@@ -108,3 +108,24 @@ const studentList = [
 ];
 
 // Your code goes here....
+// Your code goes here....
+const containerEl = document.querySelector("#output_container");
+
+function showStudents() {
+    for (let i = 0; i < studentList.length; i++) {
+        console.log(i, studentList[i]);
+        console.log(i, studentList[i].favorite_color);
+        const myTemplate =
+        <section class="card">
+            <img src="https:///i.pravatar.cc/150?id=1" />
+            <p>Name: <strong>Walter</strong></p>
+            <p>Favorite Color: <strong>yellow</strong></p>
+        </section>
+        //const myTemplate = `<p>$(nameList [i])</p>`;
+        containerEl.insertAdjacentHTML("afterbegin", myTemplate);
+    }
+    }
+
+function clearContainer() {
+    containerEl.innerHTML ="";
+}
