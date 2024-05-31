@@ -56,7 +56,7 @@ function draw() {
     // generate a random x-position, y-position, and size:
     let x = randomInt(0, canvasWidth);
     let y = randomInt(0, canvasHeight);
-    let size = randomFloat(25, 125);
+    let size = randomInt(25, 125);
 
     // draw a random circle each time the program animates:
     circle(x, y, size);

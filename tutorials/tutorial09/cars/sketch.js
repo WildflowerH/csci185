@@ -6,15 +6,15 @@ const c1 = {
     x: 0,
     y: 300,
     width: 200,
-    speed: 2,
+    speed: 10,
     color: 'black'
 };
 
 const c2 = {
     x: 1000,
-    y: 300,
+    y: 200,
     width: 150,
-    speed: -2,
+    speed: -5,
     color: 'hotpink',
 };
 
@@ -28,11 +28,17 @@ function setup() {
 // animation loop:
 function draw() {
     // clear the canvas:
+    if (c1.x > canvasWidth + 100) {
+        c1.x=-100;
+    }
+    if (c2.x < 0) {
+        c2.x = canvasWidth + 100;
+    }
     clear();
 
     // move the car:
     c1.x += c1.speed;
-    c2.x +=,c2.speed;
+    c2.x += c2.speed;
 
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
