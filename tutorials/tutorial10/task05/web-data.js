@@ -1,11 +1,21 @@
 const containerEl = document.querySelector("#output_container");
 
 async function showSong() {
-    const searchTerm = "Bob Dylan";
+    const searchTerm = "The Kills";
     const url = `https://www.apitutor.org/spotify/simple/one/v1/search?q=${searchTerm}&type=track`;
     const response = await fetch(url);
     const song = await response.json();
     console.log(song);
+
+    const myTemplate =
+    `<section class="song">
+        <img src="${song.album.image_url}" />
+        <p>${song.artist.name}</p>
+        <p>Name: <strong>${song.name}</strong></p>
+        <audio controls src="${song.preview_url}"></audio>
+    </section>`;
+    //const myTemplate = `<p>$(nameList [i])</p>`;
+    containerEl.insertAdjacentHTML("afterbegin", myTemplate);
 
     // your code goes here. Figure out how to output something like this to the screen,
     // but with the song data returned from the server...
