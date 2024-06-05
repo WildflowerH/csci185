@@ -12,7 +12,7 @@ const restaurants = [
 
 const mainElement = document.querySelector("#output");
 for (let i = 0; i < restaurants.length; i++) {
-    if (restaurants[i].category === "pizza") {
-    mainElement.innerHTML += '<p>${restaurants[i].name}</P>';
+    if (restaurants[i].category === "thai") {
+    mainElement.innerHTML += `<p>${restaurants[i].name}</P>`;
 }
 }
