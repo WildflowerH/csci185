@@ -9,10 +9,18 @@ function goodbye() {
     // your code here
 
     console.log('change message to Goodbye');
-    document.querySelector("message").className="Goodbye";
-    messageElement.textContent="Goodbye";
+    document.querySelector.getElementById("message").console="Goodbye";
+    document.querySelector("message").innerHTML="Goodbye";
+    
     
 }
 
 function showDog() {
-    // your code here  
+    // your code here 
+    image= document.getElementById(showDog);
+    document.querySelector("img").src="images/dog.jpg";
+    
+
+
+    
+}
