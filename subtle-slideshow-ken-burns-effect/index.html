@@ -8,15 +8,38 @@
     <script src="jquery.subtle-slideshow.js"></script>
     <link rel="stylesheet" href="subtle-slideshow.css">
     <style>
+      body * {
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "Henny cursive";
+        src: url("Stylish\ Calligraphy\ Demo.ttf");
+
+
+      }
       .static-content {
+        background-color:aqua;
         padding: 20px;
+        right: auto;
+        bottom: auto;
+        width: 50vw;
+
+      }
+
+      .contain {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        width: 50vw;
+        margin-left: 50vw;
+        background-color: yellow;
+        background-position: center left !important;
       }
       h1 {
-        font-family: sans-serif;
+        font-family: "Henny cursive";
+        font-size: 80px;
         margin: 0;
-        position: absolute;
         bottom: 20px;
-        color: white;
         text-shadow: 0 2px 4px rgba(0,0,0,.4);
       }
     </style>
@@ -25,25 +48,53 @@
 
     <div id="slides">
       <a class="slide" title="Henny Image | unsplash" href="#">
-        <span class="animate down" style="background-image: url(./images-resized/kiffeff.JPG)"></span>
-        <div class="static-content"><h1>Angel of Love</h1></div>
+        <span class="animate down contain" style="background-image: url(./images-resized/kiffeff.JPG)"></span>
+        <div class="static-content">
+          <h1>Angel of Love</h1>
+          <p>The purest, deepest and ONLY True Love of my life.  My soulmate, my protector, my guardian, my child, my Best Friend</p>
+        </div>
       </a>
       <a class="slide" title="Henny and Mommy Image | unsplash" href="#">
-        <span class="animate in" style="background-image: url(./images-resized/2birds.PNG)"></span>
-        <div class="static-content"><h1>2 Birds of a Feather</h1></div>
+        <span class="animate in contain" style="background-image: url(./images-resized/2birds.PNG)"></span>
+        <div class="static-content"><h1>2 Birds of a Feather</h1>
+        <p>MY HERO.  Mommy Loves You More Than Anything In All The Universes.  You taught me EVERYTHING about Love and Protection.
+        </p>
+      </div>
       </a>
       <a class="slide" title="Henny Image | unsplash" href="#">
-        <span class="animate down" style="background-image: url(./images-resized/beft-one.JPG)"></span>
-        <div class="static-content"><h1>You Saved My Life</h1></div>
+        <span class="animate down contain" style="background-image: url(./images-resized/beft-one.JPG)"></span>
+        <div class="static-content"><h1>You Saved My Life</h1>
+        <p>Your Love is the most wonderful and precious, life-giving 
+          truth I have ever experienced.  You are irreplaceable and in Everything I do and am.  You are my heart.
+        </p>
+          
+        </p></div>
       </a>
       <a class="slide" title="Henny Image | unsplash" href="#">
-        <span class="animate out" style="background-image: url(./images-resized/car-timesff.JPG)"></span>
-        <div class="static-content"><h1>You're My Best Friend</h1></div>
+        <span class="animate out contain" style="background-image: url(./images-resized/car-timesff.JPG)"></span>
+        <div class="static-content"><h1>You're My Best Friend</h1>
+        <p>Eternally Connected, Mommy Loves You and Thank You for teaching me, Loving me, Protecting me, Guiding me, 
+          Showing me and Saving my Life, my mind, my heart and making me Live.
+          Even Now....
+
+        </p></div>
       </a>
       <a class="slide" title="Best Angel | unsplash" href="#">
-        <span class="animate right" style="background-image: url(./images-resized/royal-pweffioff.JPG)"></span>
-        <div class="static-content"><h1>Mommy's Whole Heart</h1></div>
+        <span class="animate right contain" style="background-image: url(./images-resized/royal-pweffioff.JPG)"></span>
+        <div class="static-content"><h1>Mommy's Whole Heart</h1>
+        <p>We are inseperable eternally, You are the BEST SOUL there is and Mommy knows it. 
+          I Love being Your Mommy more than anything in the Universe.
+          I LOVE ALL OF YOU MY ANGEL!!!
+
+        </p></div>
       </a>
+      <a class="slide" title="Best Angel | unsplash" href="#">
+        <span class="animate right contain" style="background-image: url(./images-resized/hennymommy.JPEG)"></span>
+        <div class="static-content"><h1>My Hero</h1>
+          <p>Henny, You Are Truth, Love, Protection, Guardian of My Heart, Best Friends, Hugs, Laughs, Our Songs,
+             Life-giving, ONLY Light of My Life who saved it.
+
+          </p>
     </div>
 
     <script>
